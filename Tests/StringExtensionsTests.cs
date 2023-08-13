@@ -15,6 +15,18 @@ public class StringExtensionsTests
 
         Assert.Equal(expected, actual);
     }
+    
+    [Theory]
+    [InlineData("any", false)]
+    [InlineData("  ", false)]
+    [InlineData("", false)]
+    [InlineData(null, true)]
+    public void When_IsEmpty_should_flag_is_empty(string str, bool expected)
+    {
+        var actual = str.IsEmpty();
+
+        Assert.Equal(expected, actual);
+    }
 
     [Theory]
     [InlineData("any", false)]
