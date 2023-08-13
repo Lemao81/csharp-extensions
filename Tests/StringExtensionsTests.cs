@@ -19,8 +19,8 @@ public class StringExtensionsTests
     [Theory]
     [InlineData("any", false)]
     [InlineData("  ", false)]
-    [InlineData("", false)]
-    [InlineData(null, true)]
+    [InlineData("", true)]
+    [InlineData(null, false)]
     public void When_IsEmpty_should_flag_is_empty(string str, bool expected)
     {
         var actual = str.IsEmpty();
