@@ -1,0 +1,35 @@
+name: CI Build
+
+on:
+  push:
+    branches:
+      - 'main'
+      - 'feature/**'
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - edited
+    branches:
+      - 'main'
+        
+jobs: 
+  build_test:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v3
+        with: 
+          dotnet-version: 6.0.413
+          
+      - name: Restore
+        run: dotnet restore
+        
+      - name: Build
+        run: dotnet build -c Release --no-restore
+        
+      - name: Test
+        run: dotnet test --no-restore
