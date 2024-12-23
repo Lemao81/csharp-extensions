@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Tests.Helpers;
+﻿namespace Tests.Helpers;
 
 [AttributeUsage(AttributeTargets.Property)]
 public class TestAttribute : Attribute

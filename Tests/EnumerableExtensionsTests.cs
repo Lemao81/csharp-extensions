@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using CSharpExtensions;
+﻿using CSharpExtensions;
 
 namespace Tests;
 
@@ -16,7 +15,7 @@ public class EnumerableExtensionsTests
     [Fact]
     public void When_IsNullOrEmpty_given_null_should_return_true()
     {
-        var actual = ((List<string>)null).IsNullOrEmpty();
+        var actual = ((List<string>?)null).IsNullOrEmpty();
 
         Assert.True(actual);
     }

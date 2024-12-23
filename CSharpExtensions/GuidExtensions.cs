@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace CSharpExtensions;
+﻿namespace CSharpExtensions;
 
 public static class GuidExtensions
 {

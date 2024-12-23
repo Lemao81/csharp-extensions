@@ -1,7 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net6.0</TargetFramework>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>true</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <WarningsAsErrors>Nullable</WarningsAsErrors>
+        <PackageId>UtilExtensions</PackageId>
+        <Version>0.0.1</Version>
+        <Title>Utility extensions</Title>
+        <Authors>Jueggs</Authors>
+        <Description>Utility extensions</Description>
+        <PackageTags>extensions</PackageTags>
     </PropertyGroup>
 
 </Project>

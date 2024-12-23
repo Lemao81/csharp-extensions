@@ -1,5 +1,4 @@
-﻿using System;
-using CSharpExtensions;
+﻿using CSharpExtensions;
 
 namespace Tests;
 
@@ -19,7 +18,7 @@ public class GuidExtensionsTests
     [InlineData("5842f660-c784-491c-a8c6-6f5ff48f19be", false)]
     [InlineData("00000000-0000-0000-0000-000000000000", true)]
     [InlineData(null, true)]
-    public void When_IsNullOrEmpty_should_flag_is_null_or_empty(string guidString, bool expected)
+    public void When_IsNullOrEmpty_should_flag_is_null_or_empty(string? guidString, bool expected)
     {
         Guid? guid = string.IsNullOrEmpty(guidString) ? null : Guid.Parse(guidString);
         var actual = guid.IsNullOrEmpty();
