@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace CSharpExtensions;
+namespace UtilExtensions;
 
 public static class ByteArrayExtensions
 {

@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace CSharpExtensions;
+namespace UtilExtensions;
 
 public static class PropertyInfoExtensions
 {

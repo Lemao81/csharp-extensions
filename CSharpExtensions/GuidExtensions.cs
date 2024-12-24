@@ -1,4 +1,4 @@
-﻿namespace CSharpExtensions;
+﻿namespace UtilExtensions;
 
 public static class GuidExtensions
 {

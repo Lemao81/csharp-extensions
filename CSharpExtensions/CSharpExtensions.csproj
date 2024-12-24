@@ -5,12 +5,15 @@
         <ImplicitUsings>true</ImplicitUsings>
         <Nullable>enable</Nullable>
         <WarningsAsErrors>Nullable</WarningsAsErrors>
+        <AssemblyName>UtilExtensions</AssemblyName>
+        <RootNamespace>UtilExtensions</RootNamespace>
         <PackageId>UtilExtensions</PackageId>
-        <Version>0.0.1</Version>
+        <Version>0.0.3</Version>
         <Title>Utility extensions</Title>
         <Authors>Jueggs</Authors>
         <Description>Utility extensions</Description>
         <PackageTags>extensions</PackageTags>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     </PropertyGroup>
 
 </Project>

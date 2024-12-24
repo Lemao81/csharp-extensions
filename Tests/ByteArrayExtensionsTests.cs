@@ -1,4 +1,4 @@
-using CSharpExtensions;
+using UtilExtensions;
 
 namespace Tests;
 
