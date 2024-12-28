@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace UtilExtensions;
+namespace Lemao.UtilExtensions;
 
 public static class PropertyInfoExtensions
 {

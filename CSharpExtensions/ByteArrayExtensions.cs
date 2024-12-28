@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace UtilExtensions;
+namespace Lemao.UtilExtensions;
 
 public static class ByteArrayExtensions
 {

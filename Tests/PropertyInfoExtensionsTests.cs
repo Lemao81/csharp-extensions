@@ -1,5 +1,5 @@
-﻿using Tests.Helpers;
-using UtilExtensions;
+﻿using Lemao.UtilExtensions;
+using Tests.Helpers;
 
 namespace Tests;
 

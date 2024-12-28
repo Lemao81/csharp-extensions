@@ -1,4 +1,4 @@
-﻿namespace UtilExtensions;
+﻿namespace Lemao.UtilExtensions;
 
 public static class EnumerableExtensions
 {

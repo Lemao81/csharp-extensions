@@ -5,15 +5,20 @@
         <ImplicitUsings>true</ImplicitUsings>
         <Nullable>enable</Nullable>
         <WarningsAsErrors>Nullable</WarningsAsErrors>
-        <AssemblyName>UtilExtensions</AssemblyName>
-        <RootNamespace>UtilExtensions</RootNamespace>
-        <PackageId>UtilExtensions</PackageId>
-        <Version>0.0.3</Version>
-        <Title>Utility extensions</Title>
-        <Authors>Jueggs</Authors>
-        <Description>Utility extensions</Description>
-        <PackageTags>extensions</PackageTags>
+        <AssemblyName>Lemao.UtilExtensions</AssemblyName>
+        <RootNamespace>Lemao.UtilExtensions</RootNamespace>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        
+        <PackageId>Lemao.UtilExtensions</PackageId>
+        <PackageVersion>0.0.1</PackageVersion>
+        <Title>Utility extensions</Title>
+        <Authors>Lemao</Authors>
+        <Description>Utility extensions</Description>
+        <PackageTags>Lemao.UtilExtensions;extensions</PackageTags>
+        <RepositoryUrl>https://github.com/Lemao81/csharp-extensions.git</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryBranch>main</RepositoryBranch>
+        <RepositoryCommit>36675172f425c30d89040c0c224adca832675ef6</RepositoryCommit>
     </PropertyGroup>
 
 </Project>
