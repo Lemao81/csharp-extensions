@@ -1,28 +1,33 @@
-name: CI Build
+name: Build and test
 
 on:
+  workflow_dispatch:
   push:
     branches:
-      - 'main'
+      - main
   pull_request:
     types:
       - opened
       - reopened
       - edited
     branches:
-      - 'main'
-        
+      - main
+
+env:
+  DOTNET_VERSION: 9.0.101
+
 jobs: 
-  build_test:
+  build_and_test:
     runs-on: ubuntu-22.04
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
         
-      - name: Setup .NET SDK
+      - name: Setup .NET
         uses: actions/setup-dotnet@v3
-        with: 
-          dotnet-version: 6.0.413
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
           
       - name: Restore
         run: dotnet restore
@@ -31,4 +36,4 @@ jobs:
         run: dotnet build -c Release --no-restore
         
       - name: Test
-        run: dotnet test --no-restore
+        run: dotnet test -c Release --no-restore --no-build
