@@ -10,7 +10,7 @@
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         
         <PackageId>Lemao.UtilExtensions</PackageId>
-        <PackageVersion>0.0.1</PackageVersion>
+        <PackageVersion>0.0.2</PackageVersion>
         <Title>Utility extensions</Title>
         <Authors>Lemao</Authors>
         <Description>Utility extensions</Description>
@@ -18,7 +18,7 @@
         <RepositoryUrl>https://github.com/Lemao81/csharp-extensions.git</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <RepositoryBranch>main</RepositoryBranch>
-        <RepositoryCommit>36675172f425c30d89040c0c224adca832675ef6</RepositoryCommit>
+        <RepositoryCommit>7bda4cb4d4cb2aef0d62aa519b35b7870e5372f3</RepositoryCommit>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
