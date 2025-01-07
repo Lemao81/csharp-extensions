@@ -1,8 +1,10 @@
-﻿namespace Lemao.UtilExtensions;
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace Lemao.UtilExtensions;
 
 public static class EnumerableExtensions
 {
-    public static bool IsNullOrEmpty<T>(this IEnumerable<T>? enumerable) => enumerable == null || !enumerable.Any();
+    public static bool IsNullOrEmpty<T>([NotNullWhen(returnValue: false)] this IEnumerable<T>? enumerable) => enumerable == null || !enumerable.Any();
 
     public static string JoinWith(this IEnumerable<string>? enumerable, string separator) =>
         enumerable is null ? string.Empty : string.Join(separator, enumerable);
